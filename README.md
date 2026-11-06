@@ -13,10 +13,16 @@ C'est la méthode Talking Head d'Arcads, adaptée pour que la personne parle un 
 ## Installer le skill
 **Dans l'appli Claude ou sur claude.ai**
 1. Télécharge [`arcads-talking-head-fr.zip`](arcads-talking-head-fr.zip).
-2. Va dans Réglages › Capacités › Skills et importe le `.zip`.
-3. Connecte le connecteur Arcads.
+2. Dans Paramètres › Capacités, active « Créer et modifier des fichiers ».
+3. Va dans Personnaliser › Compétences, clique sur **+**, puis **Importer une compétence**, et choisis le `.zip`.
+4. Connecte le connecteur Arcads : Paramètres › Connecteurs › Ajouter un connecteur personnalisé, avec l'adresse `https://mcp.arcads.ai`.
 
-**Dans Claude Code**
+**Dans Claude Code** (l'onglet Code de l'appli Claude, avec un abonnement Pro ou plus)
+
+Colle simplement :
+> Installe la compétence de ce dépôt GitHub : https://github.com/mathildethouv/arcads-ugc-fr
+
+Ou, dans un terminal :
 ```bash
 git clone https://github.com/mathildethouv/arcads-ugc-fr.git
 cp -r arcads-ugc-fr/arcads-talking-head-fr ~/.claude/skills/
